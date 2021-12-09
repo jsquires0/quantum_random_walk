@@ -179,7 +179,7 @@ class QuantumRandomWalk():
         """ Executs classical random walk, by measuring after each step.
 
         Returns:
-            Histogram of particle location
+            distribution of particle location
         """
         steps = 0
         while steps < self.max_steps:
@@ -199,7 +199,7 @@ class QuantumRandomWalk():
         """ Executes quantum random walk.
 
         Returns:
-            Histogram of particle locations
+            distribution of particle locations
         """
         steps = 0
         while steps < self.max_steps:
@@ -220,7 +220,7 @@ class QuantumRandomWalk():
         Args:
             classical: if True, a measurement is made after every time step
         Returns:
-            Histogram of particle location
+            distribution of particle location
         """
 
         self.initialize_registers(self.spin)
